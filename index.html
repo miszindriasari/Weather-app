@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather app</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/229c10a55d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <div class="card-app">
+         <div class="card-body">
+        <div class="row current-location">
+          <div class="col">
+            <h1 id="city"></h1>
+          </div>
+          <div class="col">
+            <div class="date-time">
+            <h3 id="date"></h3>
+            </div>
+          </div>
+          <div class="col">
+            <form class ="searchBar" id=searchBar>
+              <div class="col-6">
+                <input 
+                type="search" 
+                class="cityInput"
+                id="cityInput"
+                placeholder="Enter a city"
+                />
+                <div class="col-3">
+                  <input
+                  type="submit"
+                  value="Search"
+                  id="search"
+                  button class="btn btn-primary shadow-sm"/>
+              </div>
+              <div class="col-3">
+                  <button class="btn btn-success" id="current-location-button">
+                    current </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      
+      <br />
+      <div class="row temperatureInfo">
+        <div class="col">
+          <div class="d-flex">
+            <div class="col-3">
+              <div class="current-temp">
+                <span class ="temperature" id="temperature"></span>
+                <span class="units">
+                  <a href="#" id="celcius-link">°C </a> | 
+                <a href="#" id="fahrenheit-link">°F</a></span>
+              </div>
+            </div>
+            
+            <div class="col-3">
+              <div class="col">
+              <i class="fas fa-sun sunny-icon"></i>
+            </div>
+              <div class="col-3">
+                <div class="description"
+                id="description"></div>
+              </div>
+              
+            </div>
+            <div class="current-info">
+            <div class="col">
+             <ul>   
+              <li>Sunrise: 06:04</li>
+                <li>Sunset: 21:09 </li>
+                <li>Chance of rain: 60%</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/hr </li>
+                <li>Feels like: 11°C</li></div>
+            </ul>  
+              </div>
+            </div>
+          </div>
+        </div></div>
+        <br />
+        <br />
+
+        <div class="forecast"> 
+        <div class="row days">
+          <div class="col">Tuesday</div>
+          <div class="col">Wednesday</div>
+          <div class="col">Thursday</div>
+          <div class="col">Friday</div>
+          <div class="col">Saturday</div>
+        </div>
+        <div class="icon-temp"> 
+        <div class="row icon">
+          <div class="col">🌧</div>
+          <div class="col">🌥</div>
+          <div class="col">🌤</div>
+          <div class="col">☀️</div>
+          <div class="col">🌧</div>
+        </div></div>
+
+        <div class="row temperature">
+          <div class="col">11°C/5°C</div>
+          <div class="col">9°C/3°C</div>
+          <div class="col">11°C/2°C</div>
+          <div class="col">11°C/3°C</div>
+          <div class="col">17°C/2°C</div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+    </div>
+    <footer> Image and page coded by 
+        <a href="https://www.indriasariphotography.com" target="blank"> 
+         <strong> Tessa</strong></a>
+    </footer>
+  
+    
+        <script src="src/index.js"></script>
+  </body>
+</html>
